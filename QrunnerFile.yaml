@@ -2,14 +2,14 @@ schemaVersion: "v1/alpha"
 command: "cashpay"
 actions:
    - name: "send-notification"
-     script: "send-notification.js"
+     script: "node/src/send-notification.js"
      acceptArguments: true
      base: node@v12.10.1 #optional, empty value will use default version of Node by detecting extension file
    - name: "resend-failed-email"
-     script: "resend_failed_email.go"
+     script: "go/src/resend_failed_email.go"
      acceptArguments: true
      base: go@v1.15
    - name: "bulk-send-email"
-     script: "bulk_send_emails.py"
+     script: "pyhton/src/bulk_send_emails.py"
      acceptArguments: true
      base: python@v3.7
