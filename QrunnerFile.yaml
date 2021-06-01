@@ -8,7 +8,7 @@ actions:
    - name: "resend-failed-email"
      script: "go/src/resend_failed_email.go"
      acceptArguments: true
-     base: go:1.16.4
+     base: golang:1.16.4
    - name: "bulk-send-email"
      script: "pyhton/src/bulk_send_emails.py"
      acceptArguments: true
