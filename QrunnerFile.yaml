@@ -10,6 +10,7 @@ actions:
      acceptArguments: true
      base: golang:1.16.4
    - name: "bulk-send-email"
-     script: "pyhton/src/bulk_send_emails.py"
+     script: "go/src/resend_failed_email.go"
      acceptArguments: true
-     base: python:3.7
+     base: golang:1.16.4
+    
