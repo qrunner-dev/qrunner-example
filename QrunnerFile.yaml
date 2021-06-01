@@ -4,12 +4,12 @@ actions:
    - name: "send-notification"
      script: "node/src/send-notification.js"
      acceptArguments: true
-     base: node@v12.10.1 #optional, empty value will use default version of Node by detecting extension file
+     base: node:15.14.0 #optional, empty value will use default version of Node by detecting extension file
    - name: "resend-failed-email"
      script: "go/src/resend_failed_email.go"
      acceptArguments: true
-     base: go@v1.15
+     base: go:1.16.4
    - name: "bulk-send-email"
      script: "pyhton/src/bulk_send_emails.py"
      acceptArguments: true
-     base: python@v3.7
+     base: python:3.7
