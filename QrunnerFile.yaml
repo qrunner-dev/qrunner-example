@@ -10,7 +10,6 @@ actions:
      acceptArguments: true
      base: golang:1.16.4
    - name: "bulk-send-email"
-     script: "go/src/resend_failed_email.go"
+     script: "node/src/send-notification.js"
      acceptArguments: true
-     base: golang:1.16.4
-    
+     base: node:16.2.0
