@@ -15,4 +15,4 @@ actions:
      script: "node/src/send-notification.js"
      acceptArguments: true
      base: node:16.2.0
-     description: "Send bulk notification. How to use `cashpay bulk-send-email`
+     description: "Send bulk notification. How to use `cashpay bulk-send-email`"
