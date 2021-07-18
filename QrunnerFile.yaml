@@ -1,5 +1,6 @@
 schemaVersion: "v1/alpha"
 command: "cashpay"
+description: "Command for Cashpay product"
 actions:
    - name: "send-notification"
      script: "node/src/send-notification.js"
