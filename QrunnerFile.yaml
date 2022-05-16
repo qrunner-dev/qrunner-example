@@ -17,3 +17,5 @@ actions:
      acceptArguments: true
      base: node:16.2.0
      description: "Send bulk notification. How to use `cashpay bulk-send-email`"
+     allowedApprover:
+      - FINANCE_OPS
