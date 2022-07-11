@@ -12,10 +12,10 @@ actions:
      acceptArguments: true
      base: golang:1.16.4
      description: "Re-send notification by given notificaiton Id. How to use: `cashpay resend-failed-email abc123`"
-   - name: "bulk-send-email"
-     script: "node/src/send-notification.js"
+   - name: "resend-notification"
+     script: "node/src/resend-notification.js"
      acceptArguments: true
      base: node:16.2.0
-     description: "Send bulk notification. How to use `cashpay bulk-send-email`"
+     description: "Send bulk notification. How to use `cashpay resend-notification`"
      defaultApprover:
       - FINANCE_OPS
