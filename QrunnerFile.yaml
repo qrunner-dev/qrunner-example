@@ -4,18 +4,13 @@ description: "Command for Cashpay product"
 actions:
    - name: "send-notification"
      script: "node/src/send-notification.js"
-     acceptArguments: true
-     base: node:15.14.0 #optional, empty value will use default version of Node by detecting extension file
+     base: node:15.14.0
      description: "Send notification to targetted user. How to use: `cashpay send-notification john@snow.com`"
    - name: "resend-failed-email"
      script: "go/src/resend_failed_email.go"
-     acceptArguments: true
      base: golang:1.16.4
      description: "Re-send notification by given notificaiton Id. How to use: `cashpay resend-failed-email abc123`"
    - name: "resend-notification"
      script: "node/src/resend-notification.js"
-     acceptArguments: true
      base: node:16.2.0
      description: "Send bulk notification. How to use `cashpay resend-notification`"
-     defaultApprover:
-      - FINANCE_OPS
